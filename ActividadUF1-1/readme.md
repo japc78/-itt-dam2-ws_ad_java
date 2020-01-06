@@ -4,8 +4,8 @@ Las clases realizadas se encuentran comentadas paso por paso. Algunos comentario
 La tecnología utilizada `Java` con las clases `FileInputStream`,  `ObjectInputStream`, `FileOutputStream`, `ObjectOutputStream`, `FileWriter`, `BufferedWriter` para el tratamiento de ficheros.
 
 Se plantea el ejercicio de dos formas:
-*- Principal01.* Fichero con objetos.
-*- Principal02.* Fichero con ArrayList de coches.
+- *Principal01.* Fichero con objetos.
+- *Principal02.* Fichero con ArrayList de coches.
 
 Como herramienta IDE/Editor **Vs Code**, con las siguientes extensiones:
 - [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack).
