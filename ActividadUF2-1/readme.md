@@ -5,11 +5,11 @@ La tecnología utilizada `Java` con las clases,  `sql.Connection`, `sql.DriverMa
 
 Capturas de resultados:
 
-![](/assets/img-002.png)
-![](/assets/img-003.png)
-![](/assets/img-004.png)
-![](/assets/img-005.png)
-![](/assets/img-006.png)
+![](/img/img-002.png)
+![](/img/img-003.png)
+![](/img/img-004.png)
+![](/img/img-005.png)
+![](/img/img-006.png)
 
 Como herramienta IDE/Editor **Vs Code**, con las siguientes extensiones:
 - [Java Extension Pack](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack).
