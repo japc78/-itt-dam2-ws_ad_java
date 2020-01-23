@@ -173,15 +173,7 @@ public class Principal01 {
 		String tmp;
 		System.out.println("Introduce la matrícula del vehículo");
 		tmp = lector.nextLine();
-		for (Coche coche : coches) {
-			if (tmp.equalsIgnoreCase(coche.getMatricula())) {
-				coches.remove(coche);
-				System.out.println("Vehículo borrado con éxito");
-				tmp = "";
-				break;
-			}
-		}
-		if(!tmp.isEmpty())System.out.println("La matrícula " + tmp + " intruducida no se encuentra en la BD");
+		System.out.println((coches.remove(new Coche(tmp))? "Vehiculo borrado con exito" : "La matrícula " + tmp + " intruducida no se encuentra en la BD"));
 	}
 
 	/**
@@ -195,16 +187,9 @@ public class Principal01 {
 		String tmp;
 		System.out.println("Introduce la matrícula del vehículo");
 		tmp = lector.nextLine();
-		for (Coche coche : coches) {
-			if (tmp.equalsIgnoreCase(coche.getMatricula())) {
-				System.out.println("Vehículo en la BD: ");
-				System.out.println(coche);
-				tmp = "";
-				break;
-			}
-		}
 
-		if(!tmp.isEmpty())System.out.println("La matrícula " + tmp + " intruducida no se encuentra en la BD");
+		System.out.println(coches.contains(new Coche(tmp))? "Vehiculo en la BD: \n "
+			+ coches.get(coches.indexOf(new Coche(tmp))) : "La matrícula " + tmp + " intruducida no se encuentra en la BD");
 	}
 
 	/**
