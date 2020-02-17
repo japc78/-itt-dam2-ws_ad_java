@@ -22,7 +22,7 @@ public class XmlRead {
 			root = file.getDocumentElement();
 			printFile(root);
 		} catch (Exception e) {
-			//TODO: handle exception
+			e.printStackTrace();
 		}
 	}
 
