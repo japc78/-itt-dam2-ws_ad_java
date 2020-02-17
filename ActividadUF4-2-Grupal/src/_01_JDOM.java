@@ -12,10 +12,15 @@ public class _01_JDOM {
 		Document file;
 		Node root;
 
+		// Se parse al fichero al objeto file de tipo DOM
 		try {
 			analyzer = factory.newDocumentBuilder();
 			file = analyzer.parse("xml//recibos.xml");
+
+			// Se obotiene la raiz del documento.
 			root = file.getDocumentElement();
+
+			// Se imprime el resultado mediante la implementacion de un metodo.
 			printFile(root);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -29,10 +34,13 @@ public class _01_JDOM {
 			if (recibo.getNodeType() == Node.ELEMENT_NODE) {
 				System.out.println("Recibo: " + recibo.getChildNodes().item(1).getTextContent());
 				System.out.println("Fecha: " + recibo.getChildNodes().item(3).getTextContent());
+
+				// Imprime cada linea de detalle
 				printDetails(recibo);
 			}
 		}
 	}
+
 
 	public static void printDetails (Node node) {
 		NodeList detalles = node.getChildNodes();

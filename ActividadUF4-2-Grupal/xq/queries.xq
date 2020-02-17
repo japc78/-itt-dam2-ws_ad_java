@@ -1,7 +1,7 @@
 (:~ 1 ~:)
-(:~ for $recibos in //recibo
+for $recibos in //recibo
 where $recibos/fecha ="2017-09-05"
-return $recibos ~:)
+return $recibos
 
 (:~ 2 ~:)
 (:~ for $detalle in //detalle
