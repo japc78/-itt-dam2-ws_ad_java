@@ -1,7 +1,6 @@
 import javax.xml.xquery.*;
 
 import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
 import net.xqj.basex.BaseXXQDataSource;
 
