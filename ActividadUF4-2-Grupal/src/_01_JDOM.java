@@ -41,7 +41,6 @@ public class _01_JDOM {
 		}
 	}
 
-
 	public static void printDetails (Node node) {
 		NodeList detalles = node.getChildNodes();
 		for (int i = 0; i < detalles.getLength(); i++) {
