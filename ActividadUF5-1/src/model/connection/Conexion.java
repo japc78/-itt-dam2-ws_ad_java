@@ -34,7 +34,6 @@ public class Conexion {
 			em.close();
 			return true;
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 			return false;
 		}
