@@ -1,0 +1,259 @@
+/* Reset ------- */
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display: block;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+fieldset,
+img,
+abbr,
+acronym {
+	border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: serif;
+	font-size: 1rem;
+	font-size: 100%;
+	font-weight: normal;
+}
+
+a {
+	outline: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* General */
+html {
+	background: white;
+	font-size: 62.5%;
+	-webkit-overflow-scrolling: touch;
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: normal;
+	line-height: 1.5em;
+	color: black;
+	-webkit-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	cursor: default;
+}
+
+h1 {
+	background-color: #FFE1B3;
+	color: #234546;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.6em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	text-align: center;
+	text-rendering: optimizelegibility;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+.boton {
+	text-align: center;
+	color: #234546;
+	background-color: #FFB846;
+	display: inline-block;
+	padding: 10px 15px 9px;
+	cursor: pointer;
+	font-size: 12px;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: 900;
+	width: auto;
+	letter-spacing: 1px;
+	position: relative;
+	line-height: 1em;
+	text-decoration: none;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	border: 0;
+}
+
+.boton:hover {
+	background-color: #FFD17B;
+}
+
+.container {
+	max-width: 960px;
+	min-width: 800px;
+	margin: 0 auto;
+}
+
+.top {
+	line-height: 0;
+}
+
+
+table {
+	border-top-color: #1b406a;
+	margin-bottom: 25px;
+}
+
+table thead th {
+	background: #FFB846;
+	color: 234546;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+table th {
+	text-align: center;
+	padding: 0.5rem;
+	font-weight: normal;
+	transition: all .5s ease-in-out;
+}
+
+table td {
+	text-align: center;
+	padding: 0.25rem;
+	font-size: 0.9em;
+	font-weight: normal;
+	transition: all .5s ease-in-out;
+}
+
+table td.descripcion {
+	text-align: left;
+}
+
+table tr:hover {
+	background: #FFE1B3 !important;
+}
+
+table tr:hover td {
+	color: #234546;
+}

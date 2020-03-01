@@ -15,7 +15,7 @@ import model.services.ProductoService;
 /**
  * Servlet implementation class ServletListProducts
  */
-@WebServlet("/ServletListProducts")
+@WebServlet("/ServletProducts")
 public class ServletListProducts extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -28,8 +28,6 @@ public class ServletListProducts extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//ya que siempre quiero mostrar la lista de personas
-		//se la pedimos al gestor y se la pasamos a la vista (jsp)
-
+		doGet(request, response);
 	}
 }
