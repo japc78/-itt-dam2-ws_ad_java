@@ -14,6 +14,16 @@
 			<img alt="Ferretería" src="images/ferreteria.jpg" />
 		</header>
 		<h1>Listado de productos</h1>
+
+		<ul class="menu">
+			<li><a class="boton" href="index.html">Inicio</a></li>
+			<li><a class="boton" href="alta.jsp">Alta articulo</a></li>
+			<li><a class="boton" href="ServletProducts">Ver Listado</a></li>
+		</ul>
+
+		<div class="msg ${msgType}">
+			<span>${msg}</span>
+		</div>
 		<table>
 		<thead>
 			<tr>
@@ -24,19 +34,18 @@
 			</tr>
 		</thead>
 		<tbody>
-		<!-- PAra utilizar estas etiquetas tienen que estar dadas de alta en la parte de arriba
-			de la pagina y tener las librerias importadas en el proyecto (maven) -->
+			<%-- Utilizo una condicion para añadir una clase al tr en el caso que de añadir un producto, este aparece con color verde de fondo en el listado. --%>
 			<c:forEach items="${listarProductos}" var="producto">
-				<tr>
+				<tr <c:if test="${producto.codigo == pAdd}">class="pOk"</c:if>>
 					<td>${producto.codigo}</td>
 					<td class="descripcion">${producto.descripcion}</td>
-					<td>${producto.precio}</td>
+					<td>${producto.precio} €</td>
 					<td>${producto.stock}</td>
 				</tr>
 			</c:forEach>
 		</tbody>
 		</table>
-		<a class="boton" href="index.html">Volver</a>
+		<a class="boton" href="index.html">Volver inicio</a>
 	</div>
 </body>
 </html>

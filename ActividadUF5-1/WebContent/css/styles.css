@@ -218,6 +218,15 @@ h1 {
 	line-height: 0;
 }
 
+.menu {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-bottom: 15px;
+}
+
+.menu li {
+	margin-right:5px;
+}
 
 table {
 	border-top-color: #1b406a;
@@ -256,4 +265,48 @@ table tr:hover {
 
 table tr:hover td {
 	color: #234546;
+}
+
+table tr.pOk {
+	background-color: #a1df93;
+}
+
+div.msg {
+	padding: 5px 10px;
+	font-weight: bold;
+	display:none;
+	margin-bottom: 25px;
+}
+
+div.msg.error {
+	display:block;
+	border:1px solid darkred;
+	color: darkred;
+	background-color: #eeabb3 ;
+}
+
+div.msg.ok {
+	display:block;
+	border:1px solid #156403;
+	color: #156403;
+	background-color: #a1df93 ;
+}
+
+.formulario {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+}
+
+.formulario div.colspan {
+	grid-column: 1 / span 4;
+}
+
+
+
+.box {
+	display:block;
+	width: 100%;
+	border:1px solid #FFB846;
+	padding:5px 15px;
 }

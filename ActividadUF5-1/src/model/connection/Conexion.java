@@ -5,12 +5,15 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 /**
- * ConexionDao
+ * Clase que establece conexion con la BBDD.
  */
 public class Conexion {
 	private EntityManager em;
 
-
+	/**
+	 * Metodo que establece conexion con la BBDD.
+	 * @return Retorna true si la conexion es satisfactoria, false si ha habido algún problema de conexión.
+	 */
 	public boolean openConexion() {
 		try {
 			EntityManagerFactory factoria = Persistence.createEntityManagerFactory("ActividadUF5-1");
@@ -22,6 +25,10 @@ public class Conexion {
 		}
 	}
 
+	/**
+	 * Método que cierra la conexion con la BBDD
+	 * @return Retorna true si la conexion se ha cerrado satisfactoriamente, false si ha habido algún problema al cerrar la conexion.
+	 */
 	public boolean closeConexion() {
 		try {
 			em.close();
@@ -34,6 +41,7 @@ public class Conexion {
 	}
 
 	/**
+	 * EntityMananer de la conexion.
 	 * @return the em
 	 */
 	public EntityManager getEm() {
