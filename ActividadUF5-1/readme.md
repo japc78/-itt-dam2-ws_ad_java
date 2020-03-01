@@ -14,15 +14,19 @@ Como herramienta IDE/Editor **Vs Code**, con las siguientes extensiones:
 Capturas de resultados:
 
 `Inicio`
+
 ![](img/img004.png)
 
 `Mensajes de Error`
+
 ![](img/img001.png)
 
 `Mesaje de alta de producto`
+
 ![](img/img002.png)
 
-`Lisado`
+`Listado`
+
 ![](img/img003.png)
 
 

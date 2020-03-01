@@ -20,7 +20,7 @@
 			<li><a class="boton" href="alta.jsp">Alta articulo</a></li>
 			<li><a class="boton" href="ServletProducts">Ver Listado</a></li>
 		</ul>
-		<div class="msg ${msgType}">
+		<div class="msg ${msgType}"> 
 			<span>${msg}</span>
 		</div>
 		<form class="formulario" action="ServletProducts" method="POST">

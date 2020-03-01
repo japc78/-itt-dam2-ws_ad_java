@@ -18,7 +18,7 @@ import model.services.ProductoService;
 @WebServlet("/ServletProducts")
 public class ServletListProducts extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+ 
 	// Get
 	// Muestra el listado de productos.
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -57,7 +57,7 @@ public class ServletListProducts extends HttpServlet {
 
 		// Gestiono la respuesta.
 		switch (respuesta) {
-			case "er-01":
+			case "er-01": 
 				request.setAttribute("msgType", "error");
 				request.setAttribute("msg", "Codigo incorrecto, vuele a intentarlo");
 				request.setAttribute("producto", p);
